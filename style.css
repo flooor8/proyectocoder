@@ -1,0 +1,99 @@
+
+
+.barradeinicio{
+    background-color: rgb(185, 162, 118);
+    color: black;
+    font-size: 110%;
+    font-family: Helvetica, sans-serif;
+}
+
+.portadaseccion{
+    width: 100%
+}
+
+h1{
+    font-family: "Mulish", serif;
+    text-align: center;
+    font-weight: bold;
+    font-size: 170%;
+}
+
+h2{
+    font-family: "Mulish", serif;
+    text-align: center;
+    font-weight: normal;
+    font-size: 140%;
+}
+
+h3{
+    font-family: "Mulish", serif;
+    font-weight: bold;
+}
+
+p{
+    font-family: "Mulish", serif;
+    font-weight: normal;
+}
+
+.ofertasindex{
+    background-color: #d9e885
+}
+
+.aleertexto{
+    font-family: "Mulish", serif;
+    font-weight: normal;
+}
+
+.portadalibro{
+    width: 20%;
+}
+
+#tituloresena{
+    text-align: initial;
+    font-size: 100%;
+    font-weight: bold;
+    background-color: #94f88f;
+}
+
+.generolibro{
+    text-align: left;
+}
+
+#datoslibro{
+    font-weight: bold;
+}
+
+.formulario{
+    background-color: #a2fffa;
+    font-family: "Mulish", serif;
+}
+
+.imagenilustrativa{
+    width: 50%;
+}
+
+.botonresena{
+    background-color: #fca9fc;
+    color: black;
+    text-align: center;
+
+}
+
+footer{
+    background-color: rgb(185, 162, 118);
+    font-family: "Mulish", serif;
+}
+
+.redessociales{
+    text-align: right;
+}
+
+#ig{
+    text-align: right;
+    font-family: "Mulish", serif;
+}
+
+#tw{
+    text-align: right;
+    font-family: "Mulish", serif;
+}

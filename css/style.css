@@ -59,10 +59,6 @@ p{
     text-align: left;
 }
 
-#datoslibro{
-    font-weight: bold;
-}
-
 .formulario{
     background-color: #a2fffa;
     font-family: "Mulish", serif;
@@ -72,12 +68,6 @@ p{
     width: 50%;
 }
 
-.botonresena{
-    background-color: #fca9fc;
-    color: black;
-    text-align: center;
-
-}
 
 footer{
     background-color: rgb(185, 162, 118);
@@ -88,12 +78,12 @@ footer{
     text-align: right;
 }
 
-#ig{
+.ig{
     text-align: right;
     font-family: "Mulish", serif;
 }
 
-#tw{
+.tw{
     text-align: right;
     font-family: "Mulish", serif;
 }

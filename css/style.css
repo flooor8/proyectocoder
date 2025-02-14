@@ -18,6 +18,46 @@ h1{
     font-size: 170%;
 }
 
+.tituloindex{
+    padding: 10%;
+}
+
+.resenasindex{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-areas: 
+    "libro1 libro2 libro3"
+    "libro1 libro2 libro3"
+    "titulo1 titulo2 titulo3";
+    justify-content: center;
+    align-items: center;
+}
+
+#portada1{
+    grid-area: libro1;
+}
+
+#portada2{
+    grid-area: libro2;
+}
+
+#portada3{
+    grid-area: libro3;
+}
+
+.titulo1{
+    grid-area: titulo1;
+}
+
+.titulo2{
+    grid-area: titulo2;
+}
+
+.titulo3{
+    grid-area: titulo3;
+}
+
 h2{
     font-family: "Mulish", serif;
     text-align: center;
@@ -36,7 +76,58 @@ p{
 }
 
 .ofertasindex{
-    background-color: #d9e885
+    background-color: #d9e885;
+    margin-bottom: 20%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 20% 60% 15% 5%;
+    grid-template-areas: 
+    "oferta oferta oferta"
+    "libro4 libro5 libro6"
+    "titulo4 titulo5 titulo6"
+    "precio4 precio5 precio6";
+    justify-content: center;
+    align-items: center;
+}
+
+.tituloofertasindex{
+    grid-area: oferta;
+}
+
+#portada4{
+    grid-area: libro4;
+}
+
+#portada5{
+    grid-area: libro5;
+}
+
+#portada6{
+    grid-area: libro6;
+}
+
+.titulo4{
+    grid-area: titulo4;
+}
+
+.titulo5{
+    grid-area: titulo5;
+}
+
+.titulo6{
+    grid-area: titulo6;
+}
+
+.precio4{
+    grid-area: precio4;
+}
+
+.precio5{
+    grid-area: precio5;
+}
+
+.precio6{
+    grid-area: precio6;
 }
 
 .aleertexto{
@@ -45,7 +136,7 @@ p{
 }
 
 .portadalibro{
-    width: 20%;
+    width: 50%;
 }
 
 .tituloresena{

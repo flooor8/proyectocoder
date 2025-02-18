@@ -79,7 +79,6 @@ nav ul li a:hover{
     "titulo1 titulo2 titulo3";
     justify-items: center;
     align-items: center;
-    margin-bottom: 300px;
 }
 
 #portada1{
@@ -105,7 +104,6 @@ nav ul li a:hover{
 .titulo3{
     grid-area: titulo3;
 }
-
 
 
 .ofertasindex{
@@ -177,6 +175,29 @@ nav ul li a:hover{
 
 .portadalibro{
     width: 100%;
+}
+
+.contenidoindex{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 600px 400px 1000px;
+    grid-template-areas: 
+    "resenas"
+    "frase"
+    "ofertas";
+}
+
+.resenasindex{
+    grid-area: resenas;
+}
+
+.frasedeldia{
+    grid-area: frase;
+    padding: 15%;
+}
+
+.ofertasindex{
+    grid-area: ofertas;
 }
 
 /* resenas */
@@ -428,8 +449,8 @@ nav ul li a:hover{
 
 .formulario{
     background-color: #65c1be;
-    margin-left: 15%;
-    margin-right: 15%;
+    margin-left: 10%;
+    margin-right: 10%;
     margin-top: 50px;
     margin-bottom: 150px;
     padding-bottom: 50px;
@@ -437,8 +458,8 @@ nav ul li a:hover{
 }
 
 .mb-3{
-    margin-left: 30%;
-    margin-right: 30%;
+    margin-left: 10%;
+    margin-right: 10%;
     font-family: "Mulish", serif;
 }
 
@@ -452,6 +473,34 @@ nav ul li a:hover{
 .btn-primary:hover{
     background-color: #428987;
     border-color: #428987;
+}
+
+.mapacontenido{
+    font-size: 15px;
+
+}
+
+.mapa{
+    width: 75%;
+}
+
+.contenidocontacto{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+    grid-template-areas: "formulario mapa";
+    justify-content: center;
+    align-items: center;
+}
+
+.formulario{
+    grid-area: formulario;
+}
+
+.mapacontenido{
+    grid-area: mapa;
+    margin: 0;
+    padding: 0%;
 }
 
 

@@ -1,0 +1,42 @@
+.todoproposito{
+
+    .propositomain{
+        margin: 20px;
+
+        .tituloproposito{
+            margin: 70px;
+        }
+
+        .propositocontenido{
+            text-align: justify;
+            margin: 70px;
+        }
+    }
+
+    .newsletter{
+        background-color: #eae6aa;
+        margin-top: 80px;
+        margin-bottom: 80px;
+        margin-left: 25%;
+        margin-right: 25%;
+        font-family: "Mulish", serif;
+
+        .formularionewsletter{
+            display: flex;
+            justify-content: center;
+        }
+        
+        .btn-success{
+            background-color: #eae38d;
+            font-family: "Mulish", serif;
+            color: black;
+            border-color:#eae38d;
+            margin: 15px;
+        }
+        
+        .btn-success:hover{
+            background-color: #a8a363;
+            border-color: #a8a363;
+        }
+    }
+}

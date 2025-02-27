@@ -1,0 +1,30 @@
+/* Header */
+
+header{
+    display: flex;
+    justify-content: space-between;
+    justify-content: center;
+    padding: 1rem;
+    background-color: rgb(255, 183, 138);
+    font-size: 110%;
+    font-family: "Mulish", serif;
+
+    nav{
+        ul{
+            display: flex;
+            column-gap: 30px;
+            list-style-type: none;
+
+            a{
+                color: white;
+                text-decoration: none;
+            }
+
+            a:hover{
+                color: rgb(254, 90, 134);
+                text-decoration: underline;
+            }
+        }
+
+    }
+}

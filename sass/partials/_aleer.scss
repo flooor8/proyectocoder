@@ -1,0 +1,54 @@
+
+/* A leer */
+
+.aleermain{
+    .tituloaleer{
+        padding-top: 100px;
+        padding-bottom: 50px ;
+    }
+
+    .aleercontenido{
+        display: grid; 
+        grid-template-columns: 33% 33% 33%;
+        grid-template-rows: 300px 200px 350px;
+        grid-template-areas:
+        "consejo1 consejo1 imagen1"
+        "consejo2 consejo2 consejo2"
+        "imagen2 consejo3 consejo3";
+        padding: 5%;
+        text-align: justify;
+        align-items: center;
+        justify-items: center;
+
+        .imagenilustrativa{
+            width: 50%;
+        }
+
+        .aleercontenido img{
+            width: 100%;
+            height: 100%;
+        }
+        
+        .consejo1{
+            grid-area: consejo1;
+            padding-right: 5%;
+        }
+        
+        .consejo2{
+            grid-area: consejo2;
+        }
+        
+        .consejo3{
+            grid-area: consejo3;
+            padding-left: 5%;
+        }
+        
+        #imagen1{
+            grid-area: imagen1;
+        }
+        
+        #imagen2{
+            grid-area: imagen2;
+        }
+    }
+}

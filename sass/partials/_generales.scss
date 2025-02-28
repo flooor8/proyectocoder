@@ -1,9 +1,6 @@
 /* comunes */
 
-$font: "Mulish", serif;
-$rosado: rgb(255, 183, 138);
-$celeste: #65c1be;
-$bordes: #757975;
+
 
 @mixin tamano ($ancho,$alto){
     width: $ancho;
@@ -19,31 +16,31 @@ body{
     margin: 0;
     padding: 0%;
 
-    .portadaseccion{
-        @include tamano(100%, auto)
+    #portadaseccion{
+        width: 100%;
     }
 
     h1{
-        font-family: $font;
+        font-family: "Mulish", serif;
         text-align: center;
         font-weight: bold;
         font-size: 170%;
     }
     
     h2{
-        font-family: $font;
+        font-family: "Mulish", serif;
         text-align: center;
         font-weight: normal;
         font-size: 140%;
     }
     
     h3{
-        font-family: $font;
+        font-family: "Mulish", serif;
         font-weight: bold;
     }
     
     p{
-        font-family: $font;
+        font-family: "Mulish", serif;
         font-weight: normal;
     }
 

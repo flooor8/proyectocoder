@@ -1,5 +1,12 @@
 /* index */
 
+$bordes: #757975;
+
+@mixin tamano ($ancho,$alto){
+    width: $ancho;
+    height: $alto;
+}
+
 .mainindex{
 
     .tituloindex{
@@ -37,7 +44,7 @@
                 text-align: center;
 
                 .portadalibro{
-                    @include tamano(100%, auto)
+                    @include tamano(100%, auto);
                 }
 
                 #portada1{
@@ -69,6 +76,11 @@
         .frasedeldia{
             grid-area: frase;
             padding: 15%;
+
+            .autor{
+                text-align: right;
+            }
+
         }
         
         .ofertasindex{
@@ -97,7 +109,7 @@
                 text-align: center;
 
                 .portadalibro{
-                    @include tamano(100%, auto)
+                    @include tamano(100%, auto);
                 }
 
                 #portada4{

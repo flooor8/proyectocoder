@@ -1,5 +1,13 @@
 /* Contacto */
 
+$font: "Mulish", serif;
+$celeste:  #65c1be;
+
+@mixin tamano ($ancho,$alto){
+    width: $ancho;
+    height: $alto;
+}
+
 .maincontacto{
     .titulocontacto{
         padding-top: 100px;
@@ -27,7 +35,7 @@
             .mb-3{
                 margin-left: 10%;
                 margin-right: 10%;
-                font-family: $font
+                font-family: $font;
             }
             
             .btn-primary{
@@ -50,10 +58,32 @@
             font-size: 15px;
 
             .mapa{
-                @include tamano(75%, auto)
+                @include tamano(75%, auto);
             }
         }
     }
 
 
+}
+
+@media(max-width:500px){
+    .maincontacto{
+
+        .contenidocontacto{
+            grid-template-columns: 1fr;
+            grid-template-areas: 
+              "formulario"
+              "mapa";
+    
+
+              .mapacontenido{
+                padding: 15%;
+                text-align: center;
+
+                .mapa{
+                    @include tamano(90%, auto);
+                }
+            }
+        }
+    }
 }

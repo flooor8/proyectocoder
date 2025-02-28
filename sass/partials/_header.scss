@@ -1,5 +1,9 @@
 /* Header */
 
+$rosado: rgb(255, 183, 138);
+$font:"Mulish", serif;
+
+
 header{
     display: flex;
     justify-content: space-between;
@@ -8,6 +12,8 @@ header{
     background-color: $rosado;
     font-size: 110%;
     font-family: $font;
+
+
 
     nav{
         ul{
@@ -26,5 +32,19 @@ header{
             }
         }
 
+    }
+}
+
+@media(max-width:500px){
+    header{
+        justify-content: center;
+        align-content: center;
+        padding: 0;
+
+        nav ul{
+            flex-direction: row;
+            width: 1%;
+            font-size: 50%;
+        }
     }
 }

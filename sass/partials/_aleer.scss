@@ -21,12 +21,11 @@
         justify-items: center;
 
         .imagenilustrativa{
-            width: 50%;
+            @include tamano(50%, auto)
         }
 
         .aleercontenido img{
-            width: 100%;
-            height: 100%;
+            @include tamano(100%, 100%)
         }
         
         .consejo1{

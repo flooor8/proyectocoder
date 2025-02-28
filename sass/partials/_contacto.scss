@@ -50,7 +50,7 @@
             font-size: 15px;
 
             .mapa{
-                width: 75%;
+                @include tamano(75%, auto)
             }
         }
     }

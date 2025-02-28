@@ -34,80 +34,58 @@
         }
         
         .cuento2{
+            @extend .cuento1;
             grid-area: libro2;
-            border: 1px solid $bordes;
-            background-color: $rosado;
-            margin: 15px;
         }
         
         .cuento3{
+            @extend .cuento1;
             grid-area: libro3;
-            border: 1px solid $bordes;
-            background-color: $rosado;
-            margin: 15px;
         }
         
         .cuento4{
+            @extend .cuento1;
             grid-area: libro4;
-            border: 1px solid $bordes;
-            background-color: $rosado;
-            margin: 15px;
         }
         
         .cuento5{
+            @extend .cuento1;
             grid-area: libro5;
-            border: 1px solid $bordes;
-            background-color: $rosado;
-            margin: 15px;
         }
         
         .cuento6{
+            @extend .cuento1;
             grid-area: libro6;
-            border: 1px solid $bordes;
-            background-color: $rosado;
-            margin: 15px;
         }
         
         .cuento7{
+            @extend .cuento1;
             grid-area: libro7;
-            border: 1px solid $bordes;
-            background-color: $rosado;
-            margin: 15px;
         }
         
         .cuento8{
+            @extend .cuento1;
             grid-area: libro8;
-            border: 1px solid $bordes;
-            background-color: $rosado;
-            margin: 15px;
         }
         
         .cuento9{
+            @extend .cuento1;
             grid-area: libro9;
-            border: 1px solid $bordes;
-            background-color: $rosado;
-            margin: 15px;
         }
         
         .cuento10{
+            @extend .cuento1;
             grid-area: libro10;
-            border: 1px solid $bordes;
-            background-color: $rosado;
-            margin: 15px;
         }
         
         .cuento11{
+            @extend .cuento1;
             grid-area: libro11;
-            border: 1px solid $bordes;
-            background-color: $rosado;
-            margin: 15px;
         }
         
         .cuento12{
+            @extend .cuento1;
             grid-area: libro12;
-            border: 1px solid $bordes;
-            background-color: $rosado;
-            margin: 15px;
         }
     }
 }

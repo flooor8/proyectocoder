@@ -5,13 +5,22 @@ $rosado: rgb(255, 183, 138);
 $celeste: #65c1be;
 $bordes: #757975;
 
+@mixin tamano ($ancho,$alto){
+    width: $ancho;
+    height: $alto;
+}
+
+/* .class { 
+        @include tamano (50px, auto);
+
+*/
 
 body{
     margin: 0;
     padding: 0%;
 
     .portadaseccion{
-        width: 100%
+        @include tamano(100%, auto)
     }
 
     h1{
@@ -39,7 +48,7 @@ body{
     }
 
     .portadalibro{
-        width: 100%;
+        @include tamano(100%, auto)
     }
 
 }

@@ -37,7 +37,7 @@
                 text-align: center;
 
                 .portadalibro{
-                    width: 100%;
+                    @include tamano(100%, auto)
                 }
 
                 #portada1{
@@ -97,7 +97,7 @@
                 text-align: center;
 
                 .portadalibro{
-                    width: 100%;
+                    @include tamano(100%, auto)
                 }
 
                 #portada4{

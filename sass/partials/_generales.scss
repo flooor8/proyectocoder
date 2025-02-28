@@ -1,0 +1,45 @@
+/* comunes */
+
+$font: "Mulish", serif;
+$rosado: rgb(255, 183, 138);
+$celeste: #65c1be;
+$bordes: #757975;
+
+
+body{
+    margin: 0;
+    padding: 0%;
+
+    .portadaseccion{
+        width: 100%
+    }
+
+    h1{
+        font-family: $font;
+        text-align: center;
+        font-weight: bold;
+        font-size: 170%;
+    }
+    
+    h2{
+        font-family: $font;
+        text-align: center;
+        font-weight: normal;
+        font-size: 140%;
+    }
+    
+    h3{
+        font-family: $font;
+        font-weight: bold;
+    }
+    
+    p{
+        font-family: $font;
+        font-weight: normal;
+    }
+
+    .portadalibro{
+        width: 100%;
+    }
+
+}

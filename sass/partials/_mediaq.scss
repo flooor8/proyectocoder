@@ -1,0 +1,84 @@
+/* Media Q*/
+
+/* a leer */
+
+@media(max-width:500px){
+
+    header{
+        justify-content: center;
+        align-content: center;
+        padding: 0;
+
+        nav ul{
+            flex-direction: row;
+            width: 1%;
+            font-size: 50%;
+        }
+    }
+
+    .aleermain{
+
+        .tituloaleer{
+            font-size: 50%;
+            text-align: center;
+        }
+
+        .aleercontenido{
+            grid-template-columns: 1fr;
+            grid-template-rows: 250px 200px 140px 200px 250px;
+            grid-template-areas:
+            "consejo1"
+            "imagen1"
+            "consejo2"
+            "imagen2"
+            "consejo3";
+            font-size: 60%;
+            padding: 10%;
+            justify-content: center;
+            align-content: center;
+
+
+            .consejo1{
+                padding-right: 0;
+            }
+
+            .consejo3{
+                padding-left: 0;
+            }
+
+            .imagenilustrativa{
+                width: 200px;
+            }
+
+        }  
+    }
+
+    footer{
+        flex-direction: column;
+        font-size: 50%;
+        justify-items: center;
+        align-items: center;
+    }
+
+    .maincontacto{
+
+        .contenidocontacto{
+            grid-template-columns: 1fr;
+            grid-template-areas: 
+              "formulario"
+              "mapa";
+    
+
+              .mapacontenido{
+                padding: 15%;
+                text-align: center;
+
+                .mapa{
+                    width: 90%;
+                }
+            }
+        }
+    }
+
+
+}

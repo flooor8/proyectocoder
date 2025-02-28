@@ -15,7 +15,7 @@
         align-items: center;
 
         .formulario{
-            background-color: #65c1be;
+            background-color: $celeste;
             margin-left: 10%;
             margin-right: 10%;
             margin-top: 50px;
@@ -27,11 +27,11 @@
             .mb-3{
                 margin-left: 10%;
                 margin-right: 10%;
-                font-family: "Mulish", serif;
+                font-family: $font
             }
             
             .btn-primary{
-                font-family: "Mulish", serif;
+                font-family: $font;
                 background-color: #56a2a0;
                 color: black;
                 border-color: #56a2a0;

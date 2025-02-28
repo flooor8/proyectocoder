@@ -19,7 +19,7 @@
         margin-bottom: 80px;
         margin-left: 25%;
         margin-right: 25%;
-        font-family: "Mulish", serif;
+        font-family: $font;
 
         .formularionewsletter{
             display: flex;
@@ -28,7 +28,7 @@
         
         .btn-success{
             background-color: #eae38d;
-            font-family: "Mulish", serif;
+            font-family: $font;
             color: black;
             border-color:#eae38d;
             margin: 15px;

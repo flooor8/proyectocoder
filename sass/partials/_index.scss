@@ -29,7 +29,7 @@
 
             .recuadros {
                 margin: 10%;
-                border: 1px solid #757975;
+                border: 1px solid $bordes;
                 display: flex;
                 justify-items: center;
                 flex-direction: column;
@@ -89,7 +89,7 @@
 
             .recuadros {
                 margin: 10%;
-                border: 1px solid #757975;
+                border: 1px solid $bordes;
                 display: flex;
                 justify-items: center;
                 flex-direction: column;

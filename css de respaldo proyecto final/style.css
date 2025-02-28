@@ -1,0 +1,696 @@
+/* Para todos */
+
+body{
+    margin: 0;
+    padding: 0%;
+}
+
+.portadaseccion{
+    width: 100%
+}
+
+h1{
+    font-family: "Mulish", serif;
+    text-align: center;
+    font-weight: bold;
+    font-size: 170%;
+}
+
+h2{
+    font-family: "Mulish", serif;
+    text-align: center;
+    font-weight: normal;
+    font-size: 140%;
+}
+
+h3{
+    font-family: "Mulish", serif;
+    font-weight: bold;
+}
+
+p{
+    font-family: "Mulish", serif;
+    font-weight: normal;
+}
+
+
+/* Barra de navegacion */
+
+header{
+    display: flex;
+    justify-content: space-between;
+    justify-content: center;
+    padding: 1rem;
+    background-color: rgb(255, 183, 138);
+    font-size: 110%;
+    font-family: "Mulish", serif;
+}
+
+
+ul{
+    display: flex;
+    column-gap: 30px;
+    list-style-type: none;
+}
+
+nav ul li a{
+    color: white;
+    text-decoration: none;
+}
+
+nav ul li a:hover{
+    color: rgb(254, 90, 134);
+    text-decoration: underline;
+}
+
+@media(max-width:500px) {
+    header{
+        justify-content: center;
+        align-content: center;
+        padding: 0;
+    }
+
+    nav ul{
+        flex-direction: row;
+        width: 1%;
+        font-size: 50%;
+    }
+}
+
+/* index */
+
+.tituloindex{
+    padding: 10%;
+}
+
+.resenasindex{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+    grid-template-areas: 
+    "libro1 libro2 libro3"
+    "libro1 libro2 libro3"
+    "titulo1 titulo2 titulo3";
+    justify-items: center;
+    align-items: center;
+}
+
+#portada1{
+    grid-area: libro1;
+}
+
+#portada2{
+    grid-area: libro2;
+}
+
+#portada3{
+    grid-area: libro3;
+}
+
+.titulo1{
+    grid-area: titulo1;
+}
+
+.titulo2{
+    grid-area: titulo2;
+}
+
+.titulo3{
+    grid-area: titulo3;
+}
+
+
+.ofertasindex{
+    background-color: #d9e885;
+    margin-bottom: 150px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-areas: 
+    "oferta oferta oferta"
+    "libro4 libro5 libro6"
+    "titulo4 titulo5 titulo6"
+    "precio4 precio5 precio6";
+}
+
+.tituloofertasindex{
+    grid-area: oferta;
+}
+
+#portada4{
+    grid-area: libro4;
+}
+
+#portada5{
+    grid-area: libro5;
+}
+
+#portada6{
+    grid-area: libro6;
+}
+
+.titulo4{
+    grid-area: titulo4;
+}
+
+.titulo5{
+    grid-area: titulo5;
+}
+
+.titulo6{
+    grid-area: titulo6;
+}
+
+.precio4{
+    grid-area: precio4;
+}
+
+.precio5{
+    grid-area: precio5;
+}
+
+.precio6{
+    grid-area: precio6;
+}
+
+.recuadros {
+    margin: 10%;
+    border: 1px solid #757975;
+    display: flex;
+    justify-items: center;
+    flex-direction: column;
+    background-color: white;
+    text-align: center;
+}
+
+.aleertexto{
+    font-family: "Mulish", serif;
+    font-weight: normal;
+}
+
+.portadalibro{
+    width: 100%;
+}
+
+.contenidoindex{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 600px 400px 1000px;
+    grid-template-areas: 
+    "resenas"
+    "frase"
+    "ofertas";
+}
+
+.resenasindex{
+    grid-area: resenas;
+}
+
+.frasedeldia{
+    grid-area: frase;
+    padding: 15%;
+}
+
+.ofertasindex{
+    grid-area: ofertas;
+}
+
+/* resenas */
+
+.tituloresena{
+    text-align: initial;
+    font-size: 100%;
+    font-weight: bold;
+    background-color: rgb(255, 183, 138);
+}
+
+
+.tituloresenas{
+    padding-top: 100px;
+    padding-bottom: 50px ;
+    text-align: center;
+}
+
+.todaslasresenas{
+    margin: 50px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    grid-template-areas: 
+    "libro1 libro2 libro3"
+    "libro4 libro5 libro6"
+    "libro7 libro8 libro9"
+    "libro10 libro11 libro12";
+}
+
+.cuento1{
+    grid-area: libro1;
+    border: 1px solid #757975;
+    background-color: rgb(255, 183, 138);
+    margin: 15px;
+}
+
+.cuento2{
+    grid-area: libro2;
+    border: 1px solid #757975;
+    background-color: rgb(255, 183, 138);
+    margin: 15px;
+}
+
+.cuento3{
+    grid-area: libro3;
+    border: 1px solid #757975;
+    background-color: rgb(255, 183, 138);
+    margin: 15px;
+}
+
+.cuento4{
+    grid-area: libro4;
+    border: 1px solid #757975;
+    background-color: rgb(255, 183, 138);
+    margin: 15px;
+}
+
+.cuento5{
+    grid-area: libro5;
+    border: 1px solid #757975;
+    background-color: rgb(255, 183, 138);
+    margin: 15px;
+}
+
+.cuento6{
+    grid-area: libro6;
+    border: 1px solid #757975;
+    background-color: rgb(255, 183, 138);
+    margin: 15px;
+}
+
+.cuento7{
+    grid-area: libro7;
+    border: 1px solid #757975;
+    background-color: rgb(255, 183, 138);
+    margin: 15px;
+}
+
+.cuento8{
+    grid-area: libro8;
+    border: 1px solid #757975;
+    background-color: rgb(255, 183, 138);
+    margin: 15px;
+}
+
+.cuento9{
+    grid-area: libro9;
+    border: 1px solid #757975;
+    background-color: rgb(255, 183, 138);
+    margin: 15px;
+}
+
+.cuento10{
+    grid-area: libro10;
+    border: 1px solid #757975;
+    background-color: rgb(255, 183, 138);
+    margin: 15px;
+}
+
+.cuento11{
+    grid-area: libro11;
+    border: 1px solid #757975;
+    background-color: rgb(255, 183, 138);
+    margin: 15px;
+}
+
+.cuento12{
+    grid-area: libro12;
+    border: 1px solid #757975;
+    background-color: rgb(255, 183, 138);
+    margin: 15px;
+}
+
+/* tienda */
+
+.generolibro{
+    text-align: left;
+}
+
+.fraseofertas{
+    padding-top: 100px;
+}
+
+.contenidoofertas{
+    margin: 100px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 150px 580px 150px 580px 150px 580px;
+    grid-template-areas: 
+    "genero1 genero1 genero1 genero1"
+    "libro1 libro2 libro3 libro4"
+    "genero2 genero2 genero2 genero2"
+    "libro5 libro6 libro7 libro8"
+    "genero3 genero3 genero3 genero3"
+    "libro9 libro10 libro11 libro12";
+
+}
+
+#genero1{
+    grid-area: genero1;
+    margin-top: 100px;
+    margin-bottom: 100px;
+}
+
+#genero2{
+    grid-area: genero2;
+    margin-top: 100px;
+    margin-bottom: 100px;
+}
+
+#genero3{
+    grid-area: genero3;
+    margin-top: 100px;
+    margin-bottom: 100px;
+}
+
+.literatura1{
+    grid-area: libro1;
+    margin:15px;
+    border: 1px solid #757975;
+    background-color: #65c1be;
+}
+
+.literatura2{
+    grid-area: libro2;
+    margin:15px;
+    border: 1px solid #757975;
+    background-color: #65c1be;
+}
+
+.literatura3{
+    grid-area: libro3;
+    margin:15px;
+    border: 1px solid #757975;
+    background-color: #65c1be;
+}
+
+.literatura4{
+    grid-area: libro4;
+    margin:15px;
+    border: 1px solid #757975;
+    background-color: #65c1be;
+}
+
+.literatura5{
+    grid-area: libro5;
+    margin:15px;
+    border: 1px solid #757975;
+    background-color: #65c1be;
+}
+
+.literatura6{
+    grid-area: libro6;
+    margin:15px;
+    border: 1px solid #757975;
+    background-color: #65c1be;
+}
+
+.literatura7{
+    grid-area: libro7;
+    margin:15px;
+    border: 1px solid #757975;
+    background-color: #65c1be;
+}
+
+.literatura8{
+    grid-area: libro8;
+    margin:15px;
+    border: 1px solid #757975;
+    background-color: #65c1be;
+}
+
+.literatura9{
+    grid-area: libro9;
+    margin:15px;
+    border: 1px solid #757975;
+    background-color: #65c1be;
+}
+
+.literatura10{
+    grid-area: libro10;
+    margin:15px;
+    border: 1px solid #757975;
+    background-color: #65c1be;
+}
+
+.literatura11{
+    grid-area: libro11;
+    margin:15px;
+    border: 1px solid #757975;
+    background-color: #65c1be;
+}
+
+.literatura12{
+    grid-area: libro12;
+    margin:15px;
+    border: 1px solid #757975;
+    background-color: #65c1be;
+}
+
+/* contacto */
+
+.titulocontacto{
+    padding-top: 100px;
+    padding-bottom: 50px ;
+}
+
+
+.formulario{
+    background-color: #65c1be;
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-top: 50px;
+    margin-bottom: 150px;
+    padding-bottom: 50px;
+    padding-top: 50px;
+}
+
+.mb-3{
+    margin-left: 10%;
+    margin-right: 10%;
+    font-family: "Mulish", serif;
+}
+
+.btn-primary{
+    font-family: "Mulish", serif;
+    background-color: #56a2a0;
+    color: black;
+    border-color: #56a2a0;
+}
+
+.btn-primary:hover{
+    background-color: #428987;
+    border-color: #428987;
+}
+
+.mapacontenido{
+    font-size: 15px;
+
+}
+
+.mapa{
+    width: 75%;
+}
+
+.contenidocontacto{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+    grid-template-areas: "formulario mapa";
+    justify-content: center;
+    align-items: center;
+}
+
+.formulario{
+    grid-area: formulario;
+}
+
+.mapacontenido{
+    grid-area: mapa;
+    margin: 0;
+    padding: 0%;
+}
+
+@media(max-width:500px){
+    .contenidocontacto{
+        grid-template-columns: 1fr;
+        grid-template-areas: 
+          "formulario"
+          "mapa";
+
+    }
+
+    .mapacontenido{
+        padding: 15%;
+        text-align: center;
+    }
+
+    .mapa{
+        width: 90%;
+    }
+}
+
+/* a leer */
+
+.imagenilustrativa{
+    width: 50%;
+}
+
+.tituloaleer{
+    padding-top: 100px;
+    padding-bottom: 50px ;
+}
+
+.aleercontenido{
+   display: grid; 
+   grid-template-columns: 33% 33% 33%;
+   grid-template-rows: 300px 200px 350px;
+   grid-template-areas:
+   "consejo1 consejo1 imagen1"
+   "consejo2 consejo2 consejo2"
+   "imagen2 consejo3 consejo3";
+   padding: 5%;
+   text-align: justify;
+   align-items: center;
+   justify-items: center;
+}
+
+.aleercontenido img{
+    width: 100%;
+    height: 100%;
+}
+
+.consejo1{
+    grid-area: consejo1;
+    padding-right: 5%;
+}
+
+.consejo2{
+    grid-area: consejo2;
+}
+
+.consejo3{
+    grid-area: consejo3;
+    padding-left: 5%;
+}
+
+#imagen1{
+    grid-area: imagen1;
+}
+
+#imagen2{
+    grid-area: imagen2;
+}
+
+
+@media(max-width:500px){
+
+
+    .tituloaleer{
+        font-size: 50%;
+        text-align: center;
+    }
+
+    .consejo1{
+        padding-right: 0;
+    }
+
+    .consejo3{
+        padding-left: 0;
+    }
+
+    .aleercontenido{
+        grid-template-columns: 1fr;
+        grid-template-rows: 250px 200px 140px 200px 250px;
+        grid-template-areas:
+        "consejo1"
+        "imagen1"
+        "consejo2"
+        "imagen2"
+        "consejo3";
+        font-size: 60%;
+        padding: 10%;
+        justify-content: center;
+        align-content: center;
+
+    }
+
+    .imagenilustrativa{
+        width: 200px;
+    }
+
+
+
+}
+
+/* proposito */
+
+.propositomain{
+    margin: 20px;
+}
+
+.tituloproposito{
+    margin: 70px;
+}
+
+.propositocontenido{
+    text-align: justify;
+    margin: 70px;
+}
+
+.newsletter{
+    background-color: #eae6aa;
+    margin-top: 80px;
+    margin-bottom: 80px;
+    margin-left: 25%;
+    margin-right: 25%;
+    font-family: "Mulish", serif;
+
+}
+
+.formularionewsletter{
+    display: flex;
+    justify-content: center;
+}
+
+.btn-success{
+    background-color: #eae38d;
+    font-family: "Mulish", serif;
+    color: black;
+    border-color:#eae38d;
+    margin: 15px;
+}
+
+.btn-success:hover{
+    background-color: #a8a363;
+    border-color: #a8a363;
+}
+
+
+/* footer */
+
+footer{
+    background-color: rgb(255, 183, 138);
+    font-family: "Mulish", serif;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+    font-family: "Mulish", serif;
+}
+
+@media(max-width:500px){
+    footer{
+        flex-direction: column;
+        font-size: 50%;
+        justify-items: center;
+        align-items: center;
+    }
+}

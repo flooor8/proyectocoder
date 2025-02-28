@@ -5,9 +5,9 @@ header{
     justify-content: space-between;
     justify-content: center;
     padding: 1rem;
-    background-color: rgb(255, 183, 138);
+    background-color: $rosado;
     font-size: 110%;
-    font-family: "Mulish", serif;
+    font-family: $font;
 
     nav{
         ul{

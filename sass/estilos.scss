@@ -1,6 +1,7 @@
 //comentario de sass
 /* comentario de css */
 
+@use "partials/generales";
 @use "partials/header";
 @use "partials/index";
 @use "partials/proposito";
@@ -10,46 +11,4 @@
 @use "partials/contacto";
 @use "partials/footer";
 @use "partials/mediaq";
-
-
-
-/* comunes */
-
-body{
-    margin: 0;
-    padding: 0%;
-
-    .portadaseccion{
-        width: 100%
-    }
-
-    h1{
-        font-family: "Mulish", serif;
-        text-align: center;
-        font-weight: bold;
-        font-size: 170%;
-    }
-    
-    h2{
-        font-family: "Mulish", serif;
-        text-align: center;
-        font-weight: normal;
-        font-size: 140%;
-    }
-    
-    h3{
-        font-family: "Mulish", serif;
-        font-weight: bold;
-    }
-    
-    p{
-        font-family: "Mulish", serif;
-        font-weight: normal;
-    }
-
-    .portadalibro{
-        width: 100%;
-    }
-
-}
 

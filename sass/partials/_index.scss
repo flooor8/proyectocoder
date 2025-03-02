@@ -154,6 +154,32 @@ $bordes: #757975;
 
     }
 
+    @media(max-width:500px){
+        .mainindex{
 
+            .contenidoindex{
+
+                .resenasindex{
+                    
+                    .recuadros{
+                        display: flex;
+                        flex-direction: column;
+                        justify-content: center;
+                    }
+                }
+
+                .ofertasindex{
+                    
+                    .recuadros{
+                        display: flex;
+                        flex-direction: column;
+                        justify-content: center;
+                    }
+                }
+
+            }
+
+        }
+    }
 
 }

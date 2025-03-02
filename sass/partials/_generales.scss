@@ -17,7 +17,7 @@ body{
     padding: 0%;
 
     #portadaseccion{
-        width: 100%;
+        @include tamano(100%, auto)
     }
 
     h1{
@@ -25,6 +25,8 @@ body{
         text-align: center;
         font-weight: bold;
         font-size: 170%;
+        padding-top: 100px;
+        padding-bottom: 50px;
     }
     
     h2{

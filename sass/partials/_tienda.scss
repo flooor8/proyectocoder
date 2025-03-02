@@ -106,3 +106,38 @@ $bordes: #757975;
     
     }
 }
+
+@media(max-width:500px){
+     
+    .tiendamain{
+
+        .fraseofertas{
+            font-size: 150%;
+            text-align: center;
+            padding-left: 5%;
+            padding-right: 5%;
+        }
+
+        .contenidoofertas{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            margin-top: none;
+
+            .generolibro{
+                text-align: center;
+                background-color: $celeste;
+                font-weight: bold;
+            }
+
+            #genero1{
+                margin-top: none;
+    
+            }
+        }
+
+
+
+    }
+
+}

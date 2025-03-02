@@ -44,3 +44,38 @@ $font:"Mulish", serif;
         }
     }
 }
+
+@media(max-width:500px){
+
+    .todoproposito{
+
+        .propositomain{
+
+            .propositocontenido{
+                margin: 0px;
+
+                p{
+                    font-size: 15px;
+                    padding: 5px;
+                }
+            }
+            
+        }
+
+        .newsletter{
+
+            margin-left: 10%;
+            margin-right: 10%;
+
+            h2{
+                font-size: 15px;
+                font-weight: bold;
+            }
+
+            .formularionewsletter{
+                font-size: 10px;
+            }
+        }
+    }
+
+}

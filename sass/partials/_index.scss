@@ -12,6 +12,7 @@ $bordes: #757975;
 
     .tituloindex{
         padding: 10%;
+        margin: 70px;
     }
 
     .contenidoindex{
@@ -160,15 +161,25 @@ $bordes: #757975;
 @media(max-width:500px){
     .mainindex{
 
+        .tituloindex{
+            margin: 70px;
+        }        
+
+        h2{
+            margin-top: 100px;
+            margin-bottom: 5px;
+        }
+
         .contenidoindex{
             
-            grid-template-rows: 1600px 400px 2000px;
+            grid-template-rows: 1600px 400px 1800px;
 
             .resenasindex{
               
                 display: flex;
                 flex-direction: column;
                 justify-content: center;
+                margin-top: 5px;
                 
                 .recuadros{
                     @include tamano(40%,auto );

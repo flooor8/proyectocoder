@@ -98,6 +98,7 @@ header nav ul a:hover {
 /* index */
 .mainindex .tituloindex {
   padding: 10%;
+  margin: 70px;
 }
 .mainindex .contenidoindex {
   display: grid;
@@ -205,13 +206,21 @@ header nav ul a:hover {
 }
 
 @media (max-width: 500px) {
+  .mainindex .tituloindex {
+    margin: 70px;
+  }
+  .mainindex h2 {
+    margin-top: 100px;
+    margin-bottom: 5px;
+  }
   .mainindex .contenidoindex {
-    grid-template-rows: 1600px 400px 2000px;
+    grid-template-rows: 1600px 400px 1800px;
   }
   .mainindex .contenidoindex .resenasindex {
     display: flex;
     flex-direction: column;
     justify-content: center;
+    margin-top: 5px;
   }
   .mainindex .contenidoindex .resenasindex .recuadros {
     width: 40%;
@@ -355,6 +364,7 @@ header nav ul a:hover {
     text-align: center;
     padding-left: 5%;
     padding-right: 5%;
+    margin: 70px;
   }
   .resenamain .todaslasresenas {
     grid-template-columns: 1fr;
@@ -494,6 +504,7 @@ header nav ul a:hover {
   .aleermain .tituloaleer {
     font-size: 50%;
     text-align: center;
+    margin: 70px;
   }
   .aleermain .aleercontenido {
     grid-template-columns: 1fr;

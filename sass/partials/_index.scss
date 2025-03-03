@@ -154,32 +154,49 @@ $bordes: #757975;
 
     }
 
-    @media(max-width:500px){
-        .mainindex{
+}    
 
-            .contenidoindex{
+@media(max-width:500px){
+    .mainindex{
 
-                .resenasindex{
-                    
-                    .recuadros{
-                        display: flex;
-                        flex-direction: column;
-                        justify-content: center;
-                    }
-                }
+        .contenidoindex{
+            
+            grid-template-rows: 1600px 400px 2000px;
 
-                .ofertasindex{
-                    
-                    .recuadros{
-                        display: flex;
-                        flex-direction: column;
-                        justify-content: center;
-                    }
+            .resenasindex{
+              
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                
+                .recuadros{
+                    @include tamano(40%,auto );
+                    padding:5px;
                 }
 
             }
 
-        }
-    }
+            .ofertasindex{
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-content: center; 
+                justify-items: center;
+                align-items: center;
 
+                .tituloofertasindex{
+                    padding: 5px
+                }
+                
+                .recuadros{
+                    @include tamano(40%,auto );
+                    padding:5px;
+                }
+                
+            }
+
+        }
+
+    }
 }
+

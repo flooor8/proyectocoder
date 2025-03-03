@@ -183,19 +183,38 @@ header nav ul a:hover {
 .mainindex .contenidoindex .ofertasindex .recuadros .precio6 {
   grid-area: precio6;
 }
+
 @media (max-width: 500px) {
-  .mainindex .mainindex .contenidoindex .resenasindex .recuadros {
+  .mainindex .contenidoindex {
+    grid-template-rows: 1600px 400px 2000px;
+  }
+  .mainindex .contenidoindex .resenasindex {
     display: flex;
     flex-direction: column;
     justify-content: center;
   }
-  .mainindex .mainindex .contenidoindex .ofertasindex .recuadros {
+  .mainindex .contenidoindex .resenasindex .recuadros {
+    width: 40%;
+    height: auto;
+    padding: 5px;
+  }
+  .mainindex .contenidoindex .ofertasindex {
     display: flex;
     flex-direction: column;
     justify-content: center;
+    align-content: center;
+    justify-items: center;
+    align-items: center;
+  }
+  .mainindex .contenidoindex .ofertasindex .tituloofertasindex {
+    padding: 5px;
+  }
+  .mainindex .contenidoindex .ofertasindex .recuadros {
+    width: 40%;
+    height: auto;
+    padding: 5px;
   }
 }
-
 /*Proposito*/
 .todoproposito .propositomain {
   margin: 20px;

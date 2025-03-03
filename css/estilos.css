@@ -214,7 +214,7 @@ header nav ul a:hover {
     margin-bottom: 5px;
   }
   .mainindex .contenidoindex {
-    grid-template-rows: 1600px 400px 1800px;
+    grid-template-rows: 1600px 250px 1800px;
   }
   .mainindex .contenidoindex .resenasindex {
     display: flex;
@@ -226,6 +226,10 @@ header nav ul a:hover {
     width: 40%;
     height: auto;
     padding: 5px;
+  }
+  .mainindex .contenidoindex .frasedeldia h2 {
+    padding: 0%;
+    margin-top: 0px;
   }
   .mainindex .contenidoindex .ofertasindex {
     display: flex;
@@ -360,7 +364,7 @@ header nav ul a:hover {
 
 @media (max-width: 500px) {
   .resenamain .tituloresenas {
-    font-size: 100%;
+    font-size: 150%;
     text-align: center;
     padding-left: 5%;
     padding-right: 5%;
@@ -502,15 +506,16 @@ header nav ul a:hover {
 
 @media (max-width: 500px) {
   .aleermain .tituloaleer {
-    font-size: 50%;
+    font-size: 80%;
     text-align: center;
     margin: 70px;
+    padding-top: 20px;
   }
   .aleermain .aleercontenido {
     grid-template-columns: 1fr;
-    grid-template-rows: 250px 200px 140px 200px 250px;
+    grid-template-rows: 250px 200px 300px 200px 300px;
     grid-template-areas: "consejo1" "imagen1" "consejo2" "imagen2" "consejo3";
-    font-size: 60%;
+    font-size: 80%;
     padding: 10%;
     justify-content: center;
     align-content: center;

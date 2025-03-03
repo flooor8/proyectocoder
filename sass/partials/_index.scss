@@ -172,7 +172,7 @@ $bordes: #757975;
 
         .contenidoindex{
             
-            grid-template-rows: 1600px 400px 1800px;
+            grid-template-rows: 1600px 250px 1800px;
 
             .resenasindex{
               
@@ -188,6 +188,14 @@ $bordes: #757975;
 
             }
 
+            .frasedeldia{
+                h2{
+                    padding: 0%;
+                    margin-top: 0px;
+
+                }
+            }
+
             .ofertasindex{
                 display: flex;
                 flex-direction: column;
@@ -197,7 +205,7 @@ $bordes: #757975;
                 align-items: center;
 
                 .tituloofertasindex{
-                    padding: 5px
+                    padding: 5px;
                 }
                 
                 .recuadros{

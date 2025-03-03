@@ -49,6 +49,9 @@ header {
   font-size: 110%;
   font-family: "Mulish", serif;
 }
+header .dropdown {
+  display: none;
+}
 header nav ul {
   display: flex;
   column-gap: 30px;
@@ -65,14 +68,31 @@ header nav ul a:hover {
 
 @media (max-width: 500px) {
   header {
-    justify-content: center;
-    align-content: center;
-    padding: 0;
+    justify-content: left;
   }
-  header nav ul {
-    flex-direction: row;
-    width: 1%;
-    font-size: 50%;
+  header nav {
+    display: none;
+  }
+  header .dropdown {
+    display: block;
+  }
+  header .dropdown .btn-secondary {
+    background-color: rgb(252, 195, 160);
+    border-color: rgb(252, 195, 160);
+  }
+  header .dropdown .dropdown-menu {
+    background-color: rgb(252, 195, 160);
+  }
+  header .dropdown .dropdown-menu .dropdown-item {
+    color: white;
+  }
+  header .dropdown .dropdown-menu a {
+    color: white;
+    text-decoration: none;
+  }
+  header .dropdown .dropdown-menu a:hover {
+    color: rgb(254, 90, 134);
+    text-decoration: underline;
   }
 }
 /* index */

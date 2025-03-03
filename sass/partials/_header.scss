@@ -13,7 +13,9 @@ header{
     font-size: 110%;
     font-family: $font;
 
-
+    .dropdown{
+        display: none;
+    }
 
     nav{
         ul{
@@ -37,14 +39,41 @@ header{
 
 @media(max-width:500px){
     header{
-        justify-content: center;
-        align-content: center;
-        padding: 0;
 
-        nav ul{
-            flex-direction: row;
-            width: 1%;
-            font-size: 50%;
+        justify-content: left;
+
+        nav{
+            display: none;
         }
+
+        .dropdown{
+            display: block;
+
+            .btn-secondary{
+                background-color: rgb(252, 195, 160);
+                border-color: rgb(252, 195, 160);
+
+            }
+
+            .dropdown-menu{
+                background-color: rgb(252, 195, 160);
+                
+                .dropdown-item{
+                    color: white;
+                }
+
+                a{
+                    color: white;
+                    text-decoration: none;
+                }
+    
+                a:hover{
+                    color: rgb(254, 90, 134);
+                    text-decoration: underline;
+                }
+
+            }
+        }
+
     }
 }

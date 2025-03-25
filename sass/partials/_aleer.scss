@@ -1,0 +1,100 @@
+
+/* A leer */
+
+@mixin tamano ($ancho,$alto){
+    width: $ancho;
+    height: $alto;
+}
+
+.aleermain{
+    .tituloaleer{
+        padding-top: 100px;
+        padding-bottom: 50px ;
+    }
+
+    .aleercontenido{
+        display: grid; 
+        grid-template-columns: 33% 33% 33%;
+        grid-template-rows: 300px 200px 350px;
+        grid-template-areas:
+        "consejo1 consejo1 imagen1"
+        "consejo2 consejo2 consejo2"
+        "imagen2 consejo3 consejo3";
+        padding: 5%;
+        text-align: justify;
+        align-items: center;
+        justify-items: center;
+
+        .imagenilustrativa{
+            @include tamano(70%, auto)
+        }
+
+        .aleercontenido img{
+            @include tamano(100%, auto)
+        }
+        
+        .consejo1{
+            grid-area: consejo1;
+            padding-right: 5%;
+        }
+        
+        .consejo2{
+            grid-area: consejo2;
+        }
+        
+        .consejo3{
+            grid-area: consejo3;
+            padding-left: 5%;
+        }
+        
+        #imagen1{
+            grid-area: imagen1;
+        }
+        
+        #imagen2{
+            grid-area: imagen2;
+        }
+    }
+}
+
+
+@media(max-width:500px){
+    .aleermain{
+
+        .tituloaleer{
+            font-size: 80%;
+            text-align: center;
+            margin: 70px;
+            padding-top: 20px;
+        }
+
+        .aleercontenido{
+            grid-template-columns: 1fr;
+            grid-template-rows: 250px 200px 300px 200px 300px;
+            grid-template-areas:
+            "consejo1"
+            "imagen1"
+            "consejo2"
+            "imagen2"
+            "consejo3";
+            font-size: 80%;
+            padding: 10%;
+            justify-content: center;
+            align-content: center;
+
+
+            .consejo1{
+                padding-right: 0;
+            }
+
+            .consejo3{
+                padding-left: 0;
+            }
+
+            .imagenilustrativa{
+                @include tamano(200px, auto);
+            }
+
+        }  
+    }
+}

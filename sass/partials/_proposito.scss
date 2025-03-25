@@ -1,0 +1,81 @@
+/*Proposito*/
+
+$font:"Mulish", serif;
+
+.todoproposito{
+
+    .propositomain{
+        margin: 20px;
+
+        .tituloproposito{
+            margin: 70px;
+        }
+
+        .propositocontenido{
+            text-align: justify;
+            margin: 70px;
+        }
+    }
+
+    .newsletter{
+        background-color: #eae6aa;
+        margin-top: 80px;
+        margin-bottom: 80px;
+        margin-left: 25%;
+        margin-right: 25%;
+        font-family: $font;
+
+        .formularionewsletter{
+            display: flex;
+            justify-content: center;
+        }
+        
+        .btn-success{
+            background-color: #eae38d;
+            font-family: $font;
+            color: black;
+            border-color:#eae38d;
+            margin: 15px;
+        }
+        
+        .btn-success:hover{
+            background-color: #a8a363;
+            border-color: #a8a363;
+        }
+    }
+}
+
+@media(max-width:500px){
+
+    .todoproposito{
+
+        .propositomain{
+
+            .propositocontenido{
+                margin: 0px;
+
+                p{
+                    font-size: 15px;
+                    padding: 5px;
+                }
+            }
+            
+        }
+
+        .newsletter{
+
+            margin-left: 10%;
+            margin-right: 10%;
+
+            h2{
+                font-size: 15px;
+                font-weight: bold;
+            }
+
+            .formularionewsletter{
+                font-size: 10px;
+            }
+        }
+    }
+
+}

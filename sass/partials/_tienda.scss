@@ -1,0 +1,143 @@
+/* tienda */
+
+$celeste: #65c1be;
+$bordes: #757975;
+
+.tiendamain{
+
+    .fraseofertas{
+        padding-top: 100px;
+    }
+
+    .contenidoofertas{
+        margin: 100px;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-template-rows: 150px 580px 150px 580px 150px 580px;
+        grid-template-areas: 
+        "genero1 genero1 genero1 genero1"
+        "libro1 libro2 libro3 libro4"
+        "genero2 genero2 genero2 genero2"
+        "libro5 libro6 libro7 libro8"
+        "genero3 genero3 genero3 genero3"
+        "libro9 libro10 libro11 libro12";
+
+        .generolibro{
+            text-align: left;
+        }
+
+        #genero1{
+            grid-area: genero1;
+            margin-top: 100px;
+            margin-bottom: 100px;
+        }
+        
+        #genero2{
+            @extend #genero1;
+            grid-area: genero2;
+        }
+        
+        #genero3{
+            @extend #genero1;
+            grid-area: genero3;
+        }
+        
+        .literatura1{
+            grid-area: libro1;
+            margin:15px;
+            border: 1px solid $bordes;
+            background-color: $celeste;
+        }
+        
+        .literatura2{
+            @extend .literatura1;
+            grid-area: libro2;
+        }
+        
+        .literatura3{
+            @extend .literatura1;
+            grid-area: libro3;
+        }
+        
+        .literatura4{
+            @extend .literatura1;
+            grid-area: libro4;
+        }
+        
+        .literatura5{
+            @extend .literatura1;
+            grid-area: libro5;
+        }
+        
+        .literatura6{
+            @extend .literatura1;
+            grid-area: libro6;
+        }
+        
+        .literatura7{
+            @extend .literatura1;
+            grid-area: libro7;
+        }
+        
+        .literatura8{
+            @extend .literatura1;
+            grid-area: libro8;
+        }
+        
+        .literatura9{
+            @extend .literatura1;
+            grid-area: libro9;
+        }
+        
+        .literatura10{
+            @extend .literatura1;
+            grid-area: libro10;
+        }
+        
+        .literatura11{
+            @extend .literatura1;
+            grid-area: libro11;
+        }
+        
+        .literatura12{
+            @extend .literatura1;
+            grid-area: libro12;
+        }
+    
+    }
+}
+
+@media(max-width:500px){
+     
+    .tiendamain{
+
+        .fraseofertas{
+            font-size: 150%;
+            text-align: center;
+            padding-left: 5%;
+            padding-right: 5%;
+        }
+
+        .contenidoofertas{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            margin-top: none;
+
+            .generolibro{
+                text-align: center;
+                background-color: $celeste;
+                font-weight: bold;
+            }
+
+            #genero1{
+                margin-top: none;
+    
+            }
+        }
+
+
+
+    }
+
+}

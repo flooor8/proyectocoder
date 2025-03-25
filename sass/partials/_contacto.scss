@@ -1,0 +1,89 @@
+/* Contacto */
+
+$font: "Mulish", serif;
+$celeste:  #65c1be;
+
+@mixin tamano ($ancho,$alto){
+    width: $ancho;
+    height: $alto;
+}
+
+.maincontacto{
+    .titulocontacto{
+        padding-top: 100px;
+        padding-bottom: 50px;
+    }
+
+    .contenidocontacto{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr;
+        grid-template-areas: "formulario mapa";
+        justify-content: center;
+        align-items: center;
+
+        .formulario{
+            background-color: $celeste;
+            margin-left: 10%;
+            margin-right: 10%;
+            margin-top: 50px;
+            margin-bottom: 150px;
+            padding-bottom: 50px;
+            padding-top: 50px;
+            grid-area: formulario;
+
+            .mb-3{
+                margin-left: 10%;
+                margin-right: 10%;
+                font-family: $font;
+            }
+            
+            .btn-primary{
+                font-family: $font;
+                background-color: #56a2a0;
+                color: black;
+                border-color: #56a2a0;
+            }
+            
+            .btn-primary:hover{
+                background-color: #428987;
+                border-color: #428987;
+            }
+        }
+
+        .mapacontenido{
+            grid-area: mapa;
+            margin: 0;
+            padding: 0%;
+            font-size: 15px;
+
+            .mapa{
+                @include tamano(75%, auto);
+            }
+        }
+    }
+
+
+}
+
+@media(max-width:500px){
+    .maincontacto{
+
+        .contenidocontacto{
+            grid-template-columns: 1fr;
+            grid-template-areas: 
+              "formulario"
+              "mapa";
+    
+
+              .mapacontenido{
+                padding: 15%;
+                text-align: center;
+
+                .mapa{
+                    @include tamano(90%, auto);
+                }
+            }
+        }
+    }
+}

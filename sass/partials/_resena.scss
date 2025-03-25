@@ -1,0 +1,117 @@
+
+/* Resenas */
+
+$rosado: rgb(255, 183, 138);
+$bordes: #757975;
+
+.resenamain{
+    .tituloresena{
+        text-align: initial;
+        font-size: 100%;
+        font-weight: bold;
+        background-color: $rosado;
+    }
+
+    .todaslasresenas{
+        margin: 50px;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr 1fr;
+        grid-template-areas: 
+        "libro1 libro2 libro3"
+        "libro4 libro5 libro6"
+        "libro7 libro8 libro9"
+        "libro10 libro11 libro12";
+
+        .tituloresenas{
+            padding-top: 100px;
+            padding-bottom: 50px ;
+            text-align: center;
+        }
+
+        .cuento1{
+            grid-area: libro1;
+            border: 1px solid $bordes;
+            background-color: $rosado;
+            margin: 15px;
+        }
+        
+        .cuento2{
+            @extend .cuento1;
+            grid-area: libro2;
+        }
+        
+        .cuento3{
+            @extend .cuento1;
+            grid-area: libro3;
+        }
+        
+        .cuento4{
+            @extend .cuento1;
+            grid-area: libro4;
+        }
+        
+        .cuento5{
+            @extend .cuento1;
+            grid-area: libro5;
+        }
+        
+        .cuento6{
+            @extend .cuento1;
+            grid-area: libro6;
+        }
+        
+        .cuento7{
+            @extend .cuento1;
+            grid-area: libro7;
+        }
+        
+        .cuento8{
+            @extend .cuento1;
+            grid-area: libro8;
+        }
+        
+        .cuento9{
+            @extend .cuento1;
+            grid-area: libro9;
+        }
+        
+        .cuento10{
+            @extend .cuento1;
+            grid-area: libro10;
+        }
+        
+        .cuento11{
+            @extend .cuento1;
+            grid-area: libro11;
+        }
+        
+        .cuento12{
+            @extend .cuento1;
+            grid-area: libro12;
+        }
+    }
+}
+
+@media(max-width:500px){
+    
+    .resenamain{
+
+        .tituloresenas{
+            font-size: 150%;
+            text-align: center;
+            padding-left: 5%;
+            padding-right: 5%;
+            margin: 70px;
+
+        }
+
+        .todaslasresenas{
+            grid-template-columns: 1fr;
+            grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+            grid-template-areas: "libro1" "libro2" "libro3" "libro4" "libro5" "libro6" "libro7" "libro8" "libro9" "libro10" "libro11" "libro12";
+
+        }
+
+    }
+}

@@ -1,0 +1,24 @@
+/* Footer */
+
+$rosado: rgb(255, 183, 138);
+$font:"Mulish", serif;
+
+footer{
+    background-color: $rosado;
+    font-family: $font;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+    font-family: $font;
+}
+
+@media(max-width:500px){
+    footer{
+        flex-direction: column;
+        font-size: 50%;
+        justify-items: center;
+        align-items: center;
+    }
+}

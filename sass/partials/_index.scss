@@ -1,0 +1,222 @@
+/* index */
+
+$bordes: #757975;
+
+@mixin tamano ($ancho,$alto){
+    width: $ancho;
+    height: $alto;
+}
+
+
+.mainindex{
+
+    .tituloindex{
+        padding: 10%;
+        margin: 70px;
+    }
+
+    .contenidoindex{
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 600px 400px 1000px;
+        grid-template-areas: 
+        "resenas"
+        "frase"
+        "ofertas";
+
+        .resenasindex{
+            grid-area: resenas;
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            grid-template-rows: 1fr;
+            grid-template-areas: 
+            "libro1 libro2 libro3"
+            "libro1 libro2 libro3"
+            "titulo1 titulo2 titulo3";
+            justify-items: center;
+            align-items: center;
+
+            .recuadros {
+                margin: 10%;
+                border: 1px solid $bordes;
+                display: flex;
+                justify-items: center;
+                flex-direction: column;
+                background-color: white;
+                text-align: center;
+
+                .portadalibro{
+                    @include tamano(100%, auto);
+                }
+
+                #portada1{
+                    grid-area: libro1;
+                }
+                
+                #portada2{
+                    grid-area: libro2;
+                }
+                
+                #portada3{
+                    grid-area: libro3;
+                }
+                
+                .titulo1{
+                    grid-area: titulo1;
+                }
+                
+                .titulo2{
+                    grid-area: titulo2;
+                }
+                
+                .titulo3{
+                    grid-area: titulo3;
+                }
+            }
+        }
+        
+        .frasedeldia{
+            grid-area: frase;
+            padding: 15%;
+
+            .autor{
+                text-align: right;
+            }
+
+        }
+        
+        .ofertasindex{
+            grid-area: ofertas;
+            background-color: #d9e885;
+            margin-bottom: 150px;
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            grid-template-areas: 
+            "oferta oferta oferta"
+            "libro4 libro5 libro6"
+            "titulo4 titulo5 titulo6"
+            "precio4 precio5 precio6";
+
+            .tituloofertasindex{
+                grid-area: oferta;
+            }
+
+            .recuadros {
+                margin: 10%;
+                border: 1px solid $bordes;
+                display: flex;
+                justify-items: center;
+                flex-direction: column;
+                background-color: white;
+                text-align: center;
+
+                .portadalibro{
+                    @include tamano(100%, auto);
+                }
+
+                #portada4{
+                    grid-area: libro4;
+                }
+                
+                #portada5{
+                    grid-area: libro5;
+                }
+                
+                #portada6{
+                    grid-area: libro6;
+                }
+                
+                .titulo4{
+                    grid-area: titulo4;
+                }
+                
+                .titulo5{
+                    grid-area: titulo5;
+                }
+                
+                .titulo6{
+                    grid-area: titulo6;
+                }
+                
+                .precio4{
+                    grid-area: precio4;
+                }
+                
+                .precio5{
+                    grid-area: precio5;
+                }
+                
+                .precio6{
+                    grid-area: precio6;
+                }
+                
+            }
+        }
+        
+
+    }
+
+}    
+
+@media(max-width:500px){
+    .mainindex{
+
+        .tituloindex{
+            margin: 70px;
+        }        
+
+        h2{
+            margin-top: 100px;
+            margin-bottom: 5px;
+        }
+
+        .contenidoindex{
+            
+            grid-template-rows: 1600px 250px 1800px;
+
+            .resenasindex{
+              
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                margin-top: 5px;
+                
+                .recuadros{
+                    @include tamano(40%,auto );
+                    padding:5px;
+                }
+
+            }
+
+            .frasedeldia{
+                h2{
+                    padding: 0%;
+                    margin-top: 0px;
+
+                }
+            }
+
+            .ofertasindex{
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-content: center; 
+                justify-items: center;
+                align-items: center;
+
+                .tituloofertasindex{
+                    padding: 5px;
+                }
+                
+                .recuadros{
+                    @include tamano(40%,auto );
+                    padding:5px;
+                }
+                
+            }
+
+        }
+
+    }
+}
+

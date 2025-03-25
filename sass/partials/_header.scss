@@ -1,0 +1,79 @@
+/* Header */
+
+$rosado: rgb(255, 183, 138);
+$font:"Mulish", serif;
+
+
+header{
+    display: flex;
+    justify-content: space-between;
+    justify-content: center;
+    padding: 1rem;
+    background-color: $rosado;
+    font-size: 110%;
+    font-family: $font;
+
+    .dropdown{
+        display: none;
+    }
+
+    nav{
+        ul{
+            display: flex;
+            column-gap: 30px;
+            list-style-type: none;
+
+            a{
+                color: white;
+                text-decoration: none;
+            }
+
+            a:hover{
+                color: rgb(254, 90, 134);
+                text-decoration: underline;
+            }
+        }
+
+    }
+}
+
+@media(max-width:500px){
+    header{
+
+        justify-content: left;
+
+        nav{
+            display: none;
+        }
+
+        .dropdown{
+            display: block;
+
+            .btn-secondary{
+                background-color: rgb(252, 195, 160);
+                border-color: rgb(252, 195, 160);
+
+            }
+
+            .dropdown-menu{
+                background-color: rgb(252, 195, 160);
+                
+                .dropdown-item{
+                    color: white;
+                }
+
+                a{
+                    color: white;
+                    text-decoration: none;
+                }
+    
+                a:hover{
+                    color: rgb(254, 90, 134);
+                    text-decoration: underline;
+                }
+
+            }
+        }
+
+    }
+}

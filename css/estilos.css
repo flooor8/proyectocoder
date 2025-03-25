@@ -66,7 +66,7 @@ header nav ul a:hover {
   text-decoration: underline;
 }
 
-@media (max-width: 500px) {
+@media (max-width: 600px) {
   header {
     justify-content: left;
   }
@@ -248,6 +248,34 @@ header nav ul a:hover {
     padding: 5px;
   }
 }
+@media (min-width: 500px) and (max-width: 850px) {
+  .mainindex .contenidoindex {
+    grid-template-rows: 800px 400px 1000px;
+  }
+  .mainindex .contenidoindex .resenasindex {
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: "libro1 libro2" "libro1 libro2" "titulo1 titulo2";
+  }
+  .mainindex .contenidoindex .resenasindex .recuadros #portada3 {
+    display: none;
+  }
+  .mainindex .contenidoindex .resenasindex .recuadros .titulo3 {
+    display: none;
+  }
+  .mainindex .contenidoindex .ofertasindex {
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: "oferta oferta" "libro4 libro5" "titulo4 titulo5" "precio4 precio5";
+  }
+  .mainindex .contenidoindex .ofertasindex #portada6 {
+    display: none;
+  }
+  .mainindex .contenidoindex .ofertasindex .titulo6 {
+    display: none;
+  }
+  .mainindex .contenidoindex .ofertasindex .precio6 {
+    display: none;
+  }
+}
 /*Proposito*/
 .todoproposito .propositomain {
   margin: 20px;
@@ -301,6 +329,19 @@ header nav ul a:hover {
   }
   .todoproposito .newsletter .formularionewsletter {
     font-size: 10px;
+  }
+}
+@media (min-width: 500px) and (max-width: 850px) {
+  .todoproposito .propositomain .propositocontenido {
+    margin: 0px;
+  }
+  .todoproposito .propositomain .propositocontenido p {
+    font-size: 15px;
+    padding: 5px;
+  }
+  .todoproposito .newsletter {
+    margin-left: 150px;
+    margin-right: 150px;
   }
 }
 /* Resenas */
@@ -374,6 +415,13 @@ header nav ul a:hover {
     grid-template-columns: 1fr;
     grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
     grid-template-areas: "libro1" "libro2" "libro3" "libro4" "libro5" "libro6" "libro7" "libro8" "libro9" "libro10" "libro11" "libro12";
+  }
+}
+@media (min-width: 500px) and (max-width: 850px) {
+  .resenamain .todaslasresenas {
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-areas: "libro1 libro2" "libro3 libro4" "libro5 libro6" "libro7 libro8" "libro10 libro9" "libro11 libro12";
   }
 }
 /* tienda */
@@ -463,6 +511,13 @@ header nav ul a:hover {
     margin-top: none;
   }
 }
+@media (min-width: 500px) and (max-width: 1200px) {
+  .tiendamain .contenidoofertas {
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 150px 850px 850px 150px 850px 850px 150px 850px 850px;
+    grid-template-areas: "genero1 genero1" "libro1 libro2" "libro3 libro4" "genero2 genero2" "libro5 libro6" "libro7 libro8" "genero3 genero3" "libro9 libro10" "libro11 libro12";
+  }
+}
 /* A leer */
 .aleermain .tituloaleer {
   padding-top: 100px;
@@ -531,6 +586,26 @@ header nav ul a:hover {
     height: auto;
   }
 }
+@media (min-width: 500px) and (max-width: 900px) {
+  .aleermain .aleercontenido {
+    grid-template-columns: 1fr;
+    grid-template-rows: 300px 300px 300px 200px;
+    grid-template-areas: "consejo1" "consejo2" "consejo3" "imagen2";
+    font-size: 90%;
+    padding: 10%;
+    justify-content: center;
+    align-content: center;
+  }
+  .aleermain .aleercontenido #imagen1 {
+    display: none;
+  }
+  .aleermain .aleercontenido .consejo1 {
+    padding-right: 0;
+  }
+  .aleermain .aleercontenido .consejo3 {
+    padding-left: 0;
+  }
+}
 /* Contacto */
 .maincontacto .titulocontacto {
   padding-top: 100px;
@@ -580,7 +655,7 @@ header nav ul a:hover {
   height: auto;
 }
 
-@media (max-width: 500px) {
+@media (max-width: 850px) {
   .maincontacto .contenidocontacto {
     grid-template-columns: 1fr;
     grid-template-areas: "formulario" "mapa";

@@ -218,5 +218,70 @@ $bordes: #757975;
         }
 
     }
+
 }
+
+@media (min-width: 500px) and (max-width: 850px){
+        
+        .mainindex{
+
+            .contenidoindex{
+
+                grid-template-rows: 800px 400px 1000px;
+
+                .resenasindex{
+
+                    grid-template-columns: 1fr 1fr;
+                    grid-template-areas: 
+                    "libro1 libro2"
+                    "libro1 libro2"
+                    "titulo1 titulo2";
+                    
+                    .recuadros{
+
+                        #portada3{
+                            display: none;
+
+                        }
+
+                        .titulo3{
+                            display: none;
+                        }
+
+                    }
+
+                
+                }
+                
+                .ofertasindex{
+
+                    grid-template-columns: 1fr 1fr;
+                    grid-template-areas: 
+                    "oferta oferta"
+                    "libro4 libro5"
+                    "titulo4 titulo5"
+                    "precio4 precio5";
+
+                    #portada6{
+                        display: none;
+                    }
+
+                    .titulo6{
+                        display: none;
+                    }
+
+                    .precio6{
+                        display: none;
+                    }
+                
+                }
+
+
+            }
+        
+        }
+
+}
+
+
 

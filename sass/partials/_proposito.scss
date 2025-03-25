@@ -79,3 +79,32 @@ $font:"Mulish", serif;
     }
 
 }
+
+@media (min-width: 500px) and (max-width: 850px){
+
+    .todoproposito{
+
+        .propositomain{
+
+            .propositocontenido{
+                margin: 0px;
+
+                p{
+                    font-size: 15px;
+                    padding: 5px;
+                }
+            }
+            
+     
+        } 
+
+        .newsletter{
+
+            margin-left: 150px;
+            margin-right: 150px;
+
+
+        }
+
+    }
+}
